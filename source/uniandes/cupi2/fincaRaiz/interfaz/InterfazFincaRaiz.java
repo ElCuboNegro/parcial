@@ -1,7 +1,7 @@
 /**
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad de los Andes (Bogotá - Colombia)
- * Departamento de Ingeniería de Sistemas y Computación 
+ * Universidad de los Andes (Bogotï¿½ - Colombia)
+ * Departamento de Ingenierï¿½a de Sistemas y Computaciï¿½n 
  * Licenciado bajo el esquema Academic Free License version 2.1 
  *
  * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
@@ -25,7 +25,7 @@ import uniandes.cupi2.fincaRaiz.mundo.Inmueble.TipoInmueble;
 import uniandes.cupi2.fincaRaiz.mundo.Inmueble.TipoOferta;
 
 /**
- * Esta es la ventana principal de la aplicación.
+ * Esta es la ventana principal de la aplicaciï¿½n.
  */
 public class InterfazFincaRaiz extends JFrame 
 {
@@ -34,7 +34,7 @@ public class InterfazFincaRaiz extends JFrame
     // -----------------------------------------------------------------
 
     /**
-     * Constante para la serialización
+     * Constante para la serializaciï¿½n
      */
     private static final long serialVersionUID = 1L;
 
@@ -62,7 +62,7 @@ public class InterfazFincaRaiz extends JFrame
     private PanelImagen panelImagen;
 
     /**
-     * Panel con la información detallada del inmueble seleccionado
+     * Panel con la informaciï¿½n detallada del inmueble seleccionado
      */
     private PanelInfoInmueble panelInformacionInmueble;
 
@@ -76,7 +76,7 @@ public class InterfazFincaRaiz extends JFrame
     // -----------------------------------------------------------------
 
     /**
-     * Constructor de la ventana principal de la aplicación
+     * Constructor de la ventana principal de la aplicaciï¿½n
      */
     public InterfazFincaRaiz( )
     {
@@ -84,12 +84,12 @@ public class InterfazFincaRaiz extends JFrame
         fincaRaiz = new FincaRaiz( );
 
         // Construye la forma
-        setTitle( "Finca Raíz Cupi2" );
+        setTitle( "Finca Raï¿½z Cupi2" );
         setLayout( new BorderLayout( ) );
         setSize( 815, 825 );
         setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
-        // Creación de los paneles aquí
+        // Creaciï¿½n de los paneles aquï¿½
         panelImagen = new PanelImagen( );
         add( panelImagen, BorderLayout.NORTH );
 
@@ -113,11 +113,11 @@ public class InterfazFincaRaiz extends JFrame
     }
 
     // -----------------------------------------------------------------
-    // Métodos
+    // Mï¿½todos
     // -----------------------------------------------------------------
 
     /**
-     * Método para mostrar el dialogo para registrar un inmueble
+     * Mï¿½todo para mostrar el dialogo para registrar un inmueble
      */
     public void registrarInmueble( )
     {
@@ -126,7 +126,7 @@ public class InterfazFincaRaiz extends JFrame
     }
 
     /**
-     * Método para eliminar un inmueble
+     * Mï¿½todo para eliminar un inmueble
      */
     public void eliminarInmueble( )
     {
@@ -139,14 +139,14 @@ public class InterfazFincaRaiz extends JFrame
     }
 
     /**
-     * Método para buscar el inmueble más costos para la venta
+     * Mï¿½todo para buscar el inmueble mï¿½s costos para la venta
      */
     public void buscarMasCostoso( )
     {
         int i = fincaRaiz.buscarInmuebleMasCostosoVenta( );
         if( i == -1 )
         {
-            JOptionPane.showMessageDialog( this, "No hay inmuebles registrados.", "Búsqueda", JOptionPane.INFORMATION_MESSAGE );
+            JOptionPane.showMessageDialog( this, "No hay inmuebles registrados.", "Bï¿½squeda", JOptionPane.INFORMATION_MESSAGE );
         }
         else
         {
@@ -156,14 +156,14 @@ public class InterfazFincaRaiz extends JFrame
     }
 
     /**
-     * Método para buscar el inmueble más económico para arrendar
+     * Mï¿½todo para buscar el inmueble mï¿½s econï¿½mico para arrendar
      */
     public void buscarMasEconomico( )
     {
         int i = fincaRaiz.buscarInmuebleMasBaratoArrendar( );
         if( i == -1 )
         {
-            JOptionPane.showMessageDialog( this, "No hay inmuebles registrados.", "Búsqueda", JOptionPane.INFORMATION_MESSAGE );
+            JOptionPane.showMessageDialog( this, "No hay inmuebles registrados.", "Bï¿½squeda", JOptionPane.INFORMATION_MESSAGE );
         }
         else
         {
@@ -173,7 +173,7 @@ public class InterfazFincaRaiz extends JFrame
     }
 
     /**
-     * Método para buscar por la identificación del inmueble
+     * Mï¿½todo para buscar por la identificaciï¿½n del inmueble
      */
     public void buscarPorIdentificador( )
     {
@@ -185,7 +185,7 @@ public class InterfazFincaRaiz extends JFrame
             int i = fincaRaiz.buscarBinarioPorIdentificador( idInmueble );
             if( i == -1 )
             {
-                JOptionPane.showMessageDialog( this, "No se encontró un inmueble registrado con el identificador: " + idInmueble, "Búsqueda", JOptionPane.INFORMATION_MESSAGE );
+                JOptionPane.showMessageDialog( this, "No se encontrï¿½ un inmueble registrado con el identificador: " + idInmueble, "Bï¿½squeda", JOptionPane.INFORMATION_MESSAGE );
             }
             else
             {
@@ -195,7 +195,7 @@ public class InterfazFincaRaiz extends JFrame
     }
 
     /**
-     * Método para ordenar por ciudad la lista de inmuebles
+     * Mï¿½todo para ordenar por ciudad la lista de inmuebles
      */
     public void ordenarPorCiudad( )
     {
@@ -204,7 +204,7 @@ public class InterfazFincaRaiz extends JFrame
     }
 
     /**
-     * Método para ordenar por precio la lista de inmuebles
+     * Mï¿½todo para ordenar por precio la lista de inmuebles
      */
     public void ordenarPorPrecio( )
     {
@@ -213,7 +213,7 @@ public class InterfazFincaRaiz extends JFrame
     }
 
     /**
-     * Método para ordenar por tamaño la lista de inmuebles
+     * Mï¿½todo para ordenar por tamaï¿½o la lista de inmuebles
      */
     public void ordenarPorTamanio( )
     {
@@ -222,7 +222,7 @@ public class InterfazFincaRaiz extends JFrame
     }
 
     /**
-     * Método que actualiza la interfaz según los valores del mundo
+     * Mï¿½todo que actualiza la interfaz segï¿½n los valores del mundo
      */
     public void actualizar( )
     {
@@ -232,25 +232,25 @@ public class InterfazFincaRaiz extends JFrame
 
     
     /**
-     * Método que actualiza el inmueble seleccionado
+     * Mï¿½todo que actualiza el inmueble seleccionado
      * @param nInmueble El inmueble seleccionado
      */
-    public void actualizar(Inmueble nInmueble )
+    public static void actualizar(Inmueble nInmueble )
     {
         panelInformacionInmueble.actualizar( nInmueble );
     }
 
     /**
-     * Método que crea un inmueble
+     * Mï¿½todo que crea un inmueble
      * @param nTipoInmueble El tipo de inmueble
      * @param nTipoOferta El tipo de oferta del inmueble
      * @param nCiudad La ciudad donde se encuentra el inmueble
      * @param nBarrio El barrio donde se encuentra el inmueble
-     * @param nDireccion Al dirección donde se encuentra el inmueble
-     * @param nTelefono El teléfono del inmueble
-     * @param nTamanio El tamaño del inmueble
+     * @param nDireccion Al direcciï¿½n donde se encuentra el inmueble
+     * @param nTelefono El telï¿½fono del inmueble
+     * @param nTamanio El tamaï¿½o del inmueble
      * @param nPrecio El precio del inmueble
-     * @param imagenes La lista de imágenes del inmueble
+     * @param imagenes La lista de imï¿½genes del inmueble
      */
     public void crearInmueble( TipoInmueble nTipoInmueble, TipoOferta nTipoOferta, String nCiudad, String nBarrio, String nDireccion, String nTelefono, double nTamanio, double nPrecio, ArrayList<String> imagenes )
     {
@@ -260,11 +260,11 @@ public class InterfazFincaRaiz extends JFrame
     }
 
     // -----------------------------------------------------------------
-    // Puntos de Extensión
+    // Puntos de Extensiï¿½n
     // -----------------------------------------------------------------
 
     /**
-     * Método para la extensión 1
+     * Mï¿½todo para la extensiï¿½n 1
      */
     public void reqFuncOpcion1( )
     {
@@ -273,7 +273,7 @@ public class InterfazFincaRaiz extends JFrame
     }
 
     /**
-     * Método para la extensión 2
+     * Mï¿½todo para la extensiï¿½n 2
      */
     public void reqFuncOpcion2( )
     {
@@ -286,7 +286,7 @@ public class InterfazFincaRaiz extends JFrame
     // -----------------------------------------------------------------
 
     /**
-     * Este método ejecuta la aplicación, creando una nueva interfaz
+     * Este mï¿½todo ejecuta la aplicaciï¿½n, creando una nueva interfaz
      * @param args
      */
     public static void main( String[] args )
